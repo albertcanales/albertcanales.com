@@ -116,9 +116,9 @@ body {
     font-size: 15px;
     letter-spacing: -0.05em;
     font-family: "JetBrains Mono", monospace;
-    color: #e7e7e7;
+    color: #f8f8f2;
     padding: 0 5vw;
-    background: #0f0f0f;
+    background: #21222c;
 }
 
 pre {
@@ -154,12 +154,12 @@ code {
 a:link,
 a:active,
 a:visited {
-    color: #ff7d6a;
+    color: #ff79c6;
     text-decoration: none;
 }
 
 a:hover {
-    color: #b1ff62;
+    color: #8be9fd;
     text-decoration: none;
 }
 

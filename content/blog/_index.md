@@ -5,4 +5,6 @@ template = "posts.html"
 paginate_by = 25
 sort_by = "date"
 
+[extra]
+summary = "Where I write about my projects"
 +++
