@@ -1,13 +1,20 @@
 {% extends "base.html" %}
 
-{% block content %}
-<div class="title-header-outer">
-    <div class="title-header-inner">
-        <h1>{{ section.title }}</h1>
-        {% if section.description %}
-        <p>{{ section.description }}</p>
-        {% endif %}
+{% block title %}
+    <title>Home | Albert Canales</title>
+{% endblock title %}
+
+{% block header %}
+    <div class="title-header-outer">
+        <div class="title-header-inner">
+            <h1>{{ section.title }}</h1>
+            {% if section.description %}
+            <p>{{ section.description }}</p>
+            {% endif %}
+        </div>
     </div>
-</div>
-{{ section.content | safe }}
+{% endblock header %}
+
+{% block content %}
+    {{ section.content | safe }}
 {% endblock content %}
