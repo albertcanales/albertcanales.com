@@ -11,8 +11,6 @@ In my free time I enjoy doing projects and tinkering with different technologies
 
 Thanks for passing by! 
 
-*This website is under development, for any issues, please contact me!*
-
 ## Contact
 - E-mail: [albertcanalesros@gmail.com](mailto:albertcanalesros@gmail.com)
 - Git: [albertcanales](https://github.com/albertcanales) on *GitHub*

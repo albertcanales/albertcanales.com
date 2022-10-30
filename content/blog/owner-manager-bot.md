@@ -1,6 +1,9 @@
 +++
 title="Owner Manager Bot"
 date=2022-05-16
+
+[extra]
+image="owner-manager-bot.png"
 +++
 
 ## Motivation

@@ -14,5 +14,11 @@
 {% endblock header %}
 
 {% block content %}
+    {% if page.extra.image is defined %}
+        <figure>
+            <img src="/images/{{ page.extra.image }}" class="inlineimg">
+        </figure>
+    {% endif %}
+
     {{ page.content | safe }}
 {% endblock content %}
