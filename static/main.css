@@ -218,5 +218,15 @@ figcaption>a:hover {
     color: #ddd;
 }
 
+del {
+    text-decoration-thickness: 2px;
+}
+
 .footnote-definition { font-size: 90%; }
 .footnote-definition p { display: inline; }
+
+.mermaid {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
