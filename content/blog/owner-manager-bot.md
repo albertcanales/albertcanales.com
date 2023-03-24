@@ -1,6 +1,7 @@
 +++
 title="Owner Manager Bot"
 date=2022-05-16
+template="post.html"
 
 [extra]
 image="owner-manager-bot.png"
