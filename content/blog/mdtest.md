@@ -1,6 +1,7 @@
 +++
 title="Trying out Markdown syntax"
 date=2022-01-20
+template="post.html"
 draft=true
 +++
 
