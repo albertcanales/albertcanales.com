@@ -5,11 +5,11 @@ description = "Interesting stuff I find online"
 
 ## Blogroll
 
-
 - [Maizure](https://www.maizure.org/projects/)
+- [Marc](https://atthis.link/)
 - [Oscar Benedito](https://oscarbenedito.com)
 - [The Blue Book (Lyz)](https://lyz-code.github.io/blue-book/)
-
+- [Thomas Depierre](https://softwaremaxims.com)
 
 ## Cool Old Websites
 
