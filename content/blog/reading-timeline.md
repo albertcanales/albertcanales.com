@@ -113,7 +113,7 @@ Finally, if the project caught your attention, and you have questions or suggest
 
 * * *
 
-*You can take a look at the source code of the project [here](https://github.com/albertcanales/reading-timeline). For any suggestion on comment, don't hesitate to [contact me](mailto:albertcanalesros@gmail.com)*
+*You can take a look at the source code of the project [here](https://github.com/albertcanales/reading-timeline). For any suggestion on comment, don't hesitate to [contact me](mailto:contact@albertcanales.com)*
 
 *Thanks for reading!*
 
