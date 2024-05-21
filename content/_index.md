@@ -12,7 +12,7 @@ In my free time I enjoy doing projects and tinkering with different technologies
 Thanks for passing by! 
 
 ## Contact
-- E-mail: [albertcanalesros@gmail.com](mailto:albertcanalesros@gmail.com)
+- E-mail: [contact@albertcanales.com](mailto:contact@albertcanales.com)
 - Git: [albertcanales](https://github.com/albertcanales) on *GitHub*
 
 <figure>

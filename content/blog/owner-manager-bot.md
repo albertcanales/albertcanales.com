@@ -76,7 +76,7 @@ Finally, I am also happy with how the installer turned out. It is a piece that a
 
 * * *
 
-*You can take a look at the source code of the project [here](https://github.com/albertcanales/owner-manager-bot). For any suggestion on comment, don't hesitate to [contact me](mailto:albertcanalesros@gmail.com)*
+*You can take a look at the source code of the project [here](https://github.com/albertcanales/owner-manager-bot). For any suggestion on comment, don't hesitate to [contact me](mailto:contact@albertcanales.com)*
 
 *Thanks for reading!*
 
