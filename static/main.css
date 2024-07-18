@@ -201,6 +201,11 @@ figure>img {
     border-radius: 0.5em;
 }
 
+figure>iframe {
+    width: inherit;
+    border-radius: 0.5em;
+}
+
 figcaption {
     text-align: right;
     font-size: 14px;
