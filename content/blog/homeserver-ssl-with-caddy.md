@@ -365,12 +365,14 @@ Unfortunately, an easy and scalable Caddy implementation is not trivial. A few w
 
 * * *
 
-*For any suggestion on comment, don't hesitate to [contact me](mailto:contact@albertcanales.com)*
-
-*Thanks for reading!*
-
 [^1]: More precisely, this is a side-effect of not using a trusted HTTPS connection. This may have other security concerns, but they were not of much importance for me as I use Wireguard to connect to my services, which already encrypts and verifies the connection end-to-end.
 
 [^2]: Alternatively, we can avoid this step by using the `build` subsection instead of `image` on the next Compose file.
 
 [^3]: I do not talk from experience here, as I run all my infrastructure on Docker Containers using Ansible. However, as someone with more than 20 containers running, I can imagine that navigating through a single file would be kind of a nightmare.
+
+* * *
+
+*For any suggestion on comment, don't hesitate to [contact me](mailto:contact@albertcanales.com)*
+
+*Thanks for reading!*
