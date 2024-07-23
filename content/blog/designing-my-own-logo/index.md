@@ -117,3 +117,9 @@ Each personal logo is different, and thus the processes for its design can also 
 That said, I hope I have motivated you to design your own logo and gave you some ideas on how to do it.
 
 Cheers!
+
+* * *
+
+*For any suggestion on comment, don't hesitate to [contact me](mailto:contact@albertcanales.com)*
+
+*Thanks for reading!*
