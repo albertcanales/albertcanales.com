@@ -93,7 +93,7 @@
 }
 
 .title-header-inner p {
-    text-align: right;
+    text-align: center;
 }
 
 h3 {
@@ -149,6 +149,14 @@ pre::-webkit-scrollbar-thumb:active {
 
 code {
     font-family: "JetBrains Mono", monospace;
+}
+
+p > code {
+    font-family: "JetBrains Mono", monospace;
+    background-color: hsl(231, 15%, 21%);
+    padding: 0px 5px;
+    border: none;
+    border-radius: 3px;
 }
 
 a:link,
