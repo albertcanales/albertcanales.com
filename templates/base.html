@@ -18,7 +18,11 @@
     </header>
     <nav>
         {% block nav %}
-            <p style="margin: 0; text-align: center" class="navbar">
+            <div class="navbar">
+                <div class="nonnavlang">
+                    <!-- Sorry, I don't like CSS -->
+                    en ca
+                </div>
                 {% for navitem in config.extra.nav %}
                     {% if section and section.path == navitem.path %}
                         <span style="color: #ccc; text-decoration: underline; padding: 5px">{{ navitem.label }}</span>
@@ -27,7 +31,10 @@
                     {% endif %}
                 {% endfor %}
                 {#<a href="mailto:contact@albertcanales.com">contact</a>#}
-            </p>
+                <div class="navlang">
+                    en ca
+                </div>
+            </div>
             <hr>
         {% endblock nav %}
     </nav>
