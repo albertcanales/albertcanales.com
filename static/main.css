@@ -107,7 +107,20 @@ p {
 }
 
 .navbar {
-    text-align: left;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.nonnavlang {
+    float: left;
+    visibility: hidden;
+    margin-left: 1em;
+}
+
+.navlang {
+    float: right;
+    margin-right: 1em;
 }
 
 body {
