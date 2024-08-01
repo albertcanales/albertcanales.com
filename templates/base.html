@@ -19,21 +19,32 @@
     <nav>
         {% block nav %}
             <div class="navbar">
-                <div class="nonnavlang">
-                    <!-- Sorry, I don't like CSS -->
-                    en ca
-                </div>
                 {% for navitem in config.extra.nav %}
-                    {% if section and section.path == navitem.path %}
+                    {% if section and section.path is matching("^(/\w\w)?" ~ navitem.path ~ "$") %}
                         <span style="color: #ccc; text-decoration: underline; padding: 5px">{{ navitem.label }}</span>
                     {% else %}
                         <a style="padding: 5px" href="{{ navitem.path }}">{{ navitem.label }}</a>
                     {% endif %}
                 {% endfor %}
                 {#<a href="mailto:contact@albertcanales.com">contact</a>#}
-                <div class="navlang">
+                {% if section and section.extra.lang is defined %}
+                <div class="nonnavlang">
+                    <!-- Sorry, I don't like CSS -->
                     en ca
                 </div>
+                <div class="navlang">
+                    {% if section.extra.lang == "en" %}
+                        <span style="color: #ccc; text-decoration: underline">en</span>
+                    {% else %}
+                        <a href="/">en</a>
+                    {% endif %}
+                    {% if section.extra.lang == "ca" %}
+                        <span style="color: #ccc; text-decoration: underline">ca</span>
+                    {% else %}
+                        <a href="/ca/">ca</a>
+                    {% endif %}
+                </div>
+                {% endif %}
             </div>
             <hr>
         {% endblock nav %}
