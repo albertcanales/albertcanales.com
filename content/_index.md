@@ -9,7 +9,7 @@ lang = "en"
 
 Hi!
 
-I'm Albert, a Mathematics and Computer Sciences undergraduate student at CFIS-UPC, Barcelona.
+I'm Albert, a Mathematics and Computer Science undergraduate student at CFIS-UPC, Barcelona.
 
 In my free time I enjoy doing projects and tinkering with different technologies, some of which I will be documenting in this site.
 

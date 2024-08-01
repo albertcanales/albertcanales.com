@@ -9,7 +9,7 @@ lang = "ca"
 
 Hola!
 
-Soc l'Albert, un estudiant de Matemàtiques i Informàtica al CFIS-UPC, Barcelona.
+Soc l'Albert, un estudiant de Matemàtiques i Enginyeria Informàtica al CFIS-UPC, Barcelona.
 
 En el meu temps lliure gaudeixo fent projectes i trastejant amb diverses tecnologies, algunes de les quals documentaré en aquesta pàgina web.
 
