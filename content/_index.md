@@ -1,6 +1,9 @@
 +++
 title = "Welcome to my website!"
 description = "Albert Canales Ros"
+
+[extra]
+lang = "en"
 +++
 
 Hi!
@@ -12,6 +15,7 @@ In my free time I enjoy doing projects and tinkering with different technologies
 Thanks for passing by! 
 
 ## Contact
+
 - E-mail: [contact@albertcanales.com](mailto:contact@albertcanales.com)
 - Git: [albertcanales](https://github.com/albertcanales) on *GitHub*
 
@@ -23,5 +27,3 @@ Thanks for passing by!
 </figure>
 
 Made with the [Zola](https://getzola.org) SSG. Source code in available [here](https://github.com/albertcanales/albertcanales.com).
-
-
