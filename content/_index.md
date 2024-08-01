@@ -3,6 +3,7 @@ title = "Welcome to my website!"
 description = "Albert Canales Ros"
 
 [extra]
+head_title = "Home"
 lang = "en"
 +++
 
