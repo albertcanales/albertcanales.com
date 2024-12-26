@@ -66,7 +66,7 @@ Caddy does not allow us to manage wildcard certificates with all providers out o
 
 To achieve that, we can make use of a `Dockerfile` like this one:
 
-```
+```dockerfile
 FROM caddy:builder AS builder
 
 RUN xcaddy build \
@@ -89,7 +89,7 @@ We now have a Caddy image that can manage domains for our chosen provider. Let's
 
 The modified Compose file is the following. Note that we are only changing the `nginxproxymanager` service (now `caddy`), the rest stays exactly the same:
 
-```
+```yml
 version: '2.2' 
 services:
   caddy:
@@ -160,7 +160,7 @@ Configuring the certificates for our domain is quite straightforward with Caddy.
 
 Firstly, create a file named `Caddyfile` in the directory `caddy/data/`. The file should have the following content:
 
-```
+```caddyfile
 mydomain.duckdns.org, *.mydomain.duckdns.org {
 	tls {
 		dns duckdns DUCK_DNS_API_TOKEN
@@ -192,7 +192,7 @@ We may have been able to establish a secure connection, but we have not yet conf
 
 We will just need to update our `Caddyfile` to the following content:
 
-```
+```caddyfile
 mydomain.duckdns.org, *.mydomain.duckdns.org {
 	tls {
 		dns duckdns DUCK_DNS_API_TOKEN
@@ -224,7 +224,7 @@ Let's break down the changes. The provider configuration stays exactly the same.
 
 We will take a look at the chunk corresponding to a single service to understand the configuration:
 
-```
+```caddyfile
 @MATCHER host SERVICE.mydomain.duckdns.org
   handle @MATCHER {
     reverse_proxy DESTINATION
@@ -263,7 +263,7 @@ First, we'll consider at the simplest approach. We'll create a single custom Doc
 
 We would need to add the following to the Compose file for the Caddy service (supposing we want it separately):
 
-```
+```yml
 version: '2.2'
 services:
   caddy:
@@ -283,7 +283,7 @@ Note that we have a new `networks` section where we are creating two networks:
 
 Now, suppose we have a separate Compose file for our Nextcloud service. It would look something like this:
 
-```
+```yml
 version: '2.2' 
 services:
   nextcloud:
@@ -319,7 +319,7 @@ mindmap
 
 The implementation would not change much. The Compose file for the Caddy service would look like this:
 
-```
+```yml
 version: '2.2' 
 services:
   caddy:
@@ -337,7 +337,7 @@ networks:
 
 And the Compose file for the rest of services would look like this (we'll use Nextcloud as an example):
 
-```
+```yml
 version: '2.2' 
 services:
   nextcloud:

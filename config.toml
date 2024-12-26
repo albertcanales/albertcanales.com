@@ -69,7 +69,7 @@ build_search_index = false
 highlight_code = true
 
 # A list of directories used to search for additional `.sublime-syntax` files.
-extra_syntaxes = []
+extra_syntaxes_and_themes = ["syntaxes"]
 
 # The theme to use for code highlighting.
 # See below for list of allowed values.
