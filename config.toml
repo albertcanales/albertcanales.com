@@ -110,4 +110,5 @@ anchors = "on"
 nav = [
     { path = "/", label = "home" },
     { path = "/blog/", label = "blog" },
+    { path = "/uses/", label = "uses" },
 ]
