@@ -15,9 +15,13 @@ description = "Interesting stuff I find online"
 
 Whenever I find some random reference to an old blog, I like to explore the place. I love their personal touch. This is a list of my best findings, you can find more following their links.
 
-- 2023/11/04: [Ramselehof](https://ramselehof.de): A website advertising a cozy farmhouse in Germany. Found it because of the tool [WikiBlame](http://wikipedia.ramselehof.de/wikiblame.php)
+- 2025/02/25: [Jason Grossman](https://xeny.net/). Found him while reading WikiWikiWeb. Love the autobiography and the programming languages recommendations.
 
-- 2023/02/27: [Beej's Website](https://beej.us/). Specifically the *Places to Visit* section. My favourite site is the Smokey Joe's Cafe one. Came across it because of *Moria*.
+- 2025/02/24: [WikiWikiWeb](https://wiki.c2.com/). The first ever Wiki created. Don't remember how I found it. I expected it to be _Wikipedia-ish_, but the tone is completely different (and I love it!).
+
+- 2023/11/04: [Ramselehof](https://ramselehof.de). A website advertising a cozy farmhouse in Germany. Found it because of the tool [WikiBlame](http://wikipedia.ramselehof.de/wikiblame.php)
+
+- 2023/02/27: [Beej's Website](https://beej.us/). Specifically the *Places to Visit* section. My favourite site is the Smokey Joe's Cafe one. Came across it because of [Moria](https://beej.us/moria/).
 
 - 2023/01/13: [IEEE Token Ring](https://www.ieee802.org/5/www8025org/site.html). The personal touch on the smaller IEEE groups is really wholesome. Found it while ~~digressing from~~ studying for the Computer Networks subject.
 
