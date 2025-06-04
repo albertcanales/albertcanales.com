@@ -2,6 +2,9 @@
 title = "Uses"
 description = "Software that I use"
 template="section.html"
+
+[extra]
+head_title = "Uses"
 +++
 
 Some of the Software that I use on my day to day and I could recommend.
