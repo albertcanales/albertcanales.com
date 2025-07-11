@@ -188,12 +188,6 @@ a:hover {
     text-decoration: none;
 }
 
-li {
-    list-style-type: circle;
-    margin-bottom: 0.6em;
-    line-height: 1.2em;
-}
-
 hr {
     background-color: #aaaaaa;
     height: 2px;
@@ -211,6 +205,14 @@ thead {
 td {
     border: 1px solid white;
     padding: 0.4em;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-radius: 0.5em;
 }
 
 figure {
@@ -263,4 +265,12 @@ del {
 
 .back-to-top {
     text-align: center;
+}
+
+.toc-title {
+    margin-bottom: 10px;
+}
+
+.toc-ul {
+    margin-top: 10px;
 }
