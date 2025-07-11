@@ -1,0 +1,26 @@
+{% macro head_toc(header) %}
+<li>
+    <a href="{{ header.permalink | safe }}">{{ header.title }}</a>
+    {% if header.children %}
+        <ul>
+            {% for child in header.children %}
+                {{ self::head_toc(header=child) }}
+            {% endfor %}
+        </ul>
+    {% endif %}
+</li>
+{% endmacro head_toc %}
+
+{% macro page_toc(page) %}
+    {% if page.toc %}
+        <div class="toc">
+            <h2 class="toc-title">Table of Contents</h2>
+            <ul class="toc-ul">
+            {% for header in page.toc %}
+                {{ self::head_toc(header=header) }}
+            {% endfor %}
+            </ul>
+        </div>
+        <hr>
+    {% endif %}
+{% endmacro toc %}
