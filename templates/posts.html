@@ -4,6 +4,11 @@
     <title>{{ section.title }} | Albert Canales</title>
 {% endblock title %}
 
+{% block head_extra %}
+    {% set feed_path = section.path ~ "atom.xml" %}
+    <link rel="alternate" type="application/atom+xml" title="{{ section.title }} | Albert Canales" href="{{ get_url(path=feed_path) }}">
+{% endblock head_extra %}
+
 {% block header %}
     <div class="title-header-outer">
         <div class="title-header-inner">
