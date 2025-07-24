@@ -188,6 +188,15 @@ a:hover {
     text-decoration: none;
 }
 
+li {
+    margin-bottom: 0.6em;
+    line-height: 1.2em;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
 hr {
     background-color: #aaaaaa;
     height: 2px;
@@ -273,4 +282,10 @@ del {
 
 .toc-ul {
     margin-top: 10px;
+}
+
+.toc-li {
+    list-style-type: inherit;
+    margin-bottom: initial;
+    line-height: initial;
 }
