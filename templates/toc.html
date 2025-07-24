@@ -1,5 +1,5 @@
 {% macro head_toc(header) %}
-<li>
+<li class="toc-li">
     <a href="{{ header.permalink | safe }}">{{ header.title }}</a>
     {% if header.children %}
         <ul>
