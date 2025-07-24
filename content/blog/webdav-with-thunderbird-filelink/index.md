@@ -22,7 +22,7 @@ In this post I'll touch on the two provider options I liked the most, explain wh
 
 There are a handful of providers available to use Filelink, each of which has its corresponding add-on that you have to install. You can find a list of all add-ons (and thus, all providers available) [here](https://addons.thunderbird.net/thunderbird/tag/filelink/).
 
-Some of them let you let you use your account on some cloud storage provider like [Dropbox](https://addons.thunderbird.net/en-US/thunderbird/addon/filelink-provider-for-dropbox/?src=search) or [Box](https://addons.thunderbird.net/en-US/thunderbird/addon/filelink-provider-for-box/?src=search). This is the simplest option, but I prefer using my own infrastructure instead of relying on some cloud solution whenever possible.
+Some of them let you use your account on some cloud storage provider like [Dropbox](https://addons.thunderbird.net/en-US/thunderbird/addon/filelink-provider-for-dropbox/?src=search) or [Box](https://addons.thunderbird.net/en-US/thunderbird/addon/filelink-provider-for-box/?src=search). This is the simplest option, but I prefer using my own infrastructure instead of relying on some cloud solution whenever possible.
 
 Lucky for me, there are also many options that give room to self-hosting. The most interesting couple are [Send](https://addons.thunderbird.net/en-US/thunderbird/addon/filelink-provider-for-send/?src=search) and [WebDAV](https://addons.thunderbird.net/en-US/thunderbird/addon/filelink-provider-for-webdav/?src=search). Note that Send may also be used without the need to self-host by uploading the files to one of the [public instances available](https://github.com/timvisee/send-instances/).
 
@@ -49,7 +49,7 @@ Send is a great option and very beginner friendly. It's not a perfect fit for me
 
 As explained on [their website](http://www.webdav.org/): *[WebDAV] is a set of extensions to the HTTP protocol which allows users to collaboratively edit and manage files on remote web servers*. From the user's side, it is a very simple and bare-bones implementation of the file-sharing we want to accomplish and, by being a standard, offers great integration with other software. Nonetheless, and similarly to Send, it does not fulfill all my requirements by default, missing the fourth. A quick Python script will take care of that.
 
-There is WebDAV support through extensions for the most HTTP Servers: [Apache](https://httpd.apache.org/docs/2.4/mod/mod_dav.html), [Nginx](https://nginx.org/en/docs/http/ngx_http_dav_module.html) and [Caddy](https://github.com/mholt/caddy-webdav). As a big Caddy fan myself, I'll choose the latter. I'll also be using Docker for all the deployment, as it makes my life much easier in the long run.
+There is WebDAV support through extensions for the most HTTP Servers: [Apache](https://httpd.apache.org/docs/2.4/mod/mod_dav.html), [Nginx](https://nginx.org/en/docs/http/ngx_http_dav_module.html) and [Caddy](https://github.com/mholt/caddy-webdav). As a big Caddy fan myself, I'll choose the latter[^2]. I'll also be using Docker for all the deployment, as it makes my life much easier in the long run.
 
 ## WebDAV Implementation with Docker and Caddy
 
@@ -64,7 +64,7 @@ I'm using `example.com` as an example domain name here, but you should obviously
 
 ### Running Caddy with Docker
 
-Similarly to what happened in [my previous post](./homeserver-ssl-with-caddy.md), Caddy does not include WebDAV support out of the box. We have to add the module ourselves to the Docker image, which can be simply done with this `Dockerfile`:
+Similarly to what happened in [my previous post](@/blog/homeserver-ssl-with-caddy.md), Caddy does not include WebDAV support out of the box. We have to add the module ourselves to the Docker image, which can be simply done with this `Dockerfile`:
 
 ```dockerfile
 FROM caddy:builder AS builder
@@ -103,7 +103,7 @@ Before proceeding, it would be interesting to do a health check. By visiting the
 
 ### Configuring Caddy
 
-With Caddy working, it's time to set up the two aforementioned endpoints. Using the examples of the [caddy-webdav](https://github.com/mholt/caddy-webdav) plugin itself, we can can derive the following configuration which should be saved in `conf/Caddyfile`:
+With Caddy working, it's time to set up the two aforementioned endpoints. Using the examples of the [caddy-webdav](https://github.com/mholt/caddy-webdav) plugin itself, we can derive the following configuration which should be saved in `conf/Caddyfile`:
 
 ```caddyfile
 {
@@ -130,7 +130,7 @@ Let me quickly explain the configuration. For the *download* endpoint, we just w
 
 #### Using wildcard certificates
 
-Alternatively, one may prefer to use a wildcard certificate for both subdomains. Note that this would require extra configuration of the [ACME-DNS module](https://caddyserver.com/docs/modules/dns.providers.acmedns), similarly to the one I explained in my [last post](./homeserver-ssl-with-caddy.md). As this configuration depends on your DNS provider, I will not enter into more detail. More information is found in the [documentation](https://caddyserver.com/docs/automatic-https#wildcard-certificates).
+Alternatively, one may prefer to use a wildcard certificate for both subdomains. Note that this would require extra configuration of the [ACME-DNS module](https://caddyserver.com/docs/modules/dns.providers.acmedns), similarly to the one I explained in my [last post](@/blog/homeserver-ssl-with-caddy.md). As this configuration depends on your DNS provider, I will not enter into more detail. More information is found in the [documentation](https://caddyserver.com/docs/automatic-https#wildcard-certificates).
 
 If you prefer this approach, the Caddy configuration should look as such:
 
@@ -174,7 +174,7 @@ If you prefer this approach, the Caddy configuration should look as such:
 
 WebDAV itself does not offer any fancy WebUI for file uploading like Send does; it offers something much better. By being part of a standard, many third-party file browser applications are compatible with it by default.
 
-I'll focus my explanation on Nautilus, the default file browser for Ubuntu[^2], but feel free to use any other application if it better fits to your workflow. The configuration may change slightly, but I'll follow the same general steps.
+I'll focus my explanation on Nautilus, the default file browser for Ubuntu[^3], but feel free to use any other application if it better fits to your workflow. The configuration may change slightly, but I'll follow the same general steps.
 
 In Nautilus, simply click on *Other Locations* at the bottom left and, in the textbox at the bottom, write `davs://upload.example.com/` and click *Connect*. After entering the login details, you should be able to read the WebDAV data directory and upload files to it as if accessing any other directory on your machine! Seamless integration without any effort. As a bonus, you might want to bookmark the location on the left menu and enable credential saving to avoid being prompted for them every single time.
 
@@ -251,7 +251,9 @@ Congrats! Everything works :). Now you can share files with family and friends w
 
 [^1]: I'm such an slow writer that, in the time it took me to finish the post, the Thunderbird team resurrected Firefox Send as part of their Thundermail email service. You can find the announcement [here](https://blog.thunderbird.net/2025/04/thundermail-and-thunderbird-pro-services/).
 
-[^2]: I feel that I have to justify my OS choice for the Linux power users. *How can a nerd running Linux since 2016 still use Ubuntu?* I plan to answer that question in an upcoming post detailing my entire Linux journey: from plain Ubuntu to Arch Linux and back. I'll link it here when finished.
+[^2]: For a quck rundown on why I like Caddy so much, check [this section](@/blog/homeserver-ssl-with-caddy.md#quick-review-of-some-reverse-proxies) on my previous post.
+
+[^3]: I feel that I have to justify my OS choice for the Linux power users. *How can a nerd running Linux since 2016 still use Ubuntu?* I plan to answer that question in an upcoming post detailing my entire Linux journey: from plain Ubuntu to Arch Linux and back. I'll link it here when finished.
 
 * * *
 
