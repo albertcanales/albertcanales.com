@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>{{ section.title }} | Albert Canales</title>
+{% endblock title %}
+
+{% block head_extra %}
+    {% set feed_path = section.path ~ "atom.xml" %}
+    <link rel="alternate" type="application/atom+xml" title="{{ section.title }} | Albert Canales" href="{{ get_url(path=feed_path) }}">
+{% endblock head_extra %}
+
+{% block header %}
+    <div class="title-header-outer">
+        <div class="title-header-inner">
+            <h1>{{ section.title }}</h1>
+            <p>{{ section.extra.summary }}</p>
+        </div>
+    </div>
+{% endblock header %}
+
+{% block content %}
+    {{ section.content | safe }}
+    <div class="gallery">
+        {% for cpage in paginator.pages %}
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="{{ cpage.permalink~cpage.extra.cover }}">
+                </div>
+                <a href="{{ cpage.permalink }}">{{ cpage.title }}</a>
+                <br>
+                <span>{{ cpage.date }}</span>
+            </div>
+        {% endfor %}
+    </div>
+    <nav style="text-align: center">
+        <a href="{{ paginator.first }}">&lt;&lt;</a>
+        {% if paginator.previous %}
+        <a href="{{ paginator.previous }}">&lt;</a>
+        {% else %}
+        <a style="color: #aaaaaa">&lt;</a>
+        {% endif %}
+        {{ paginator.current_index }}
+        {% if paginator.next %}
+        <a href="{{ paginator.next }}">&gt;</a>
+        {% else %}
+        <a style="color: #aaaaaa">&gt;</a>
+        {% endif %}
+        <a href="{{ paginator.last }}">&gt;&gt;</a>
+    </nav>
+{% endblock content %}
