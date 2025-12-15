@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Script for removing EXIF data of all images in the Pics section
+# Script for removing EXIF data of all images in the Craft section
 
-images=$(find content/pics/ -name "*.png" -o -name "*.jpg" -o -name "*.jpeg")
+images=$(find content/craft/ -name "*.png" -o -name "*.jpg" -o -name "*.jpeg")
 
 for image in $images; do
 	echo "Image: $image"
