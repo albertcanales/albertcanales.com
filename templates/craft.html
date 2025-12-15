@@ -22,14 +22,16 @@
     {{ section.content | safe }}
     <div class="gallery">
         {% for cpage in paginator.pages %}
+            <a href="{{ cpage.permalink }}">
             <div class="gallery-item">
                 <div class="gallery-img">
                     <img src="{{ cpage.permalink~cpage.extra.cover }}">
                 </div>
-                <a href="{{ cpage.permalink }}">{{ cpage.title }}</a>
+                {{ cpage.title }}
                 <br>
                 <span>{{ cpage.date }}</span>
             </div>
+            </a>
         {% endfor %}
     </div>
     <nav style="text-align: center">

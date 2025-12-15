@@ -2,7 +2,7 @@
 title = "Craft"
 template = "craft.html"
 paginate_by = 12
-sort_by = "date"
+sort_by = "title"
 generate_feeds = true
 
 [extra]

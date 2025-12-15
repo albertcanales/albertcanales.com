@@ -1,6 +1,5 @@
 +++
-title="Wooden Lighthouse"
-date=2023-01-10
+title="Lighthouse"
 template="pic.html"
 
 [extra]

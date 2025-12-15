@@ -1,6 +1,5 @@
 +++
-title="Wooden Cactus"
-date=2022-12-19
+title="Cactus"
 template="pic.html"
 
 [extra]
