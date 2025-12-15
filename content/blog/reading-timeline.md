@@ -26,7 +26,7 @@ It is expected for a general user to only modify the former, but anyone looking 
 Once ready, the user can simply run the main program, automatically generating a timeline as such.
 
 <figure>
-    <img src="https://raw.githubusercontent.com/albertcanales/reading-timeline/main/timeline.svg" class="inlineimg">
+    <img src="https://raw.githubusercontent.com/albertcanales/reading-timeline/main/example.svg" class="inlineimg">
     <figcaption>
         Timeline generated with the example data
     </figcaption>
