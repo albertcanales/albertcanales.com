@@ -17,10 +17,22 @@
 
     {% if page.extra.image is defined %}
         <figure>
-            <img src="{{ page.permalink~page.extra.image }}" class="inlineimg">
+            <img src="{{ page.permalink ~ page.extra.image }}" class="inlineimg">
         </figure>
     {% endif %}
 
     {{ page.content | safe }}
+
+    {% if page.extra.steps is defined %}
+    <div class="gallery">
+        {% for step in page.extra.steps %}
+            <div class="gallery-item">
+                <div class="gallery-img">
+                    <img src="{{ page.permalink ~ step }}">
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock content %}

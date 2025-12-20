@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Script for removing EXIF data of all images in the Craft section
+# Script for removing EXIF data of all images in the craft section
 
-images=$(find content/craft/ -name "*.png" -o -name "*.jpg" -o -name "*.jpeg")
+images=$(git ls-files --others --cached --exclude-standard '*.png' '*.jpg' '*.jpeg' | grep -E "^content/craft")
 
 for image in $images; do
 	echo "Image: $image"

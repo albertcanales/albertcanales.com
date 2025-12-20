@@ -1,6 +1,6 @@
 +++
 title="Lighthouse"
-template="pic.html"
+template="craft_item.html"
 
 [extra]
 cover="cover.jpg"

@@ -1,6 +1,6 @@
 +++
 title="Nature Relief"
-template="pic.html"
+template="craft_item.html"
 
 [extra]
 cover="image.jpg"
