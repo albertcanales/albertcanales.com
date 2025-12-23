@@ -336,6 +336,11 @@ del {
 .gallery-img {
     aspect-ratio: 1;
     margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
 }
 
 .gallery-img img {
