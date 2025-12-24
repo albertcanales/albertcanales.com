@@ -294,8 +294,22 @@ del {
 .footnote-definition {
     font-size: 90%;
 }
+
+.footnote-definition + .footnote-definition {
+    margin-top: 8px;
+}
+
 .footnote-definition p {
     display: inline;
+}
+
+.footnote-definition-label {
+    vertical-align: baseline;
+    font-size: inherit;
+}
+
+.footnote-definition-label:after {
+    content: ".";
 }
 
 .mermaid {
