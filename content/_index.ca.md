@@ -9,11 +9,11 @@ lang = "ca"
 
 Hola!
 
-Soc l'Albert, un estudiant de Matemàtiques i Enginyeria Informàtica al CFIS-UPC, Barcelona.
+Soc l'Albert. He estudiat Matemàtiques i Enginyeria Informàtica al CFIS-UPC i actualment estic estudiant Seguretat i Enginyeria de Xarxes a la UvA, a Amsterdam.
 
-En el meu temps lliure gaudeixo fent projectes i trastejant amb diverses tecnologies, algunes de les quals documentaré en aquesta pàgina web.
+En el meu temps lliure m'agrada trastejar amb tecnologia i crear coses a mà, algunes de les quals documentaré en aquesta pàgina web.
 
-Gràcies per passar!
+Gràcies per passar-hi!
 
 ## Contacte
 
