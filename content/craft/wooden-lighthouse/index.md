@@ -12,3 +12,7 @@ steps = [
 	"steps/3.jpg",
 ]
 +++
+
+Simple Lighthouse designed by the legendary [Linker](https://www.youtube.com/watch?v=7UEVTDCt5pc).
+
+Pictures from the first one I carved. I did so to relax from studying in the hardest semester of my bachelor's.

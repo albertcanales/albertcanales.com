@@ -9,4 +9,4 @@ generate_feeds = true
 summary = "Where I work with my hands"
 +++
 
-TK Section Description
+Here I post some of my handcrafted creations. I mostly carve in wood, and I'm starting to carve in stone. Occasionally, I also do some leather work. Click in each picture to view details, process pictures, etc.

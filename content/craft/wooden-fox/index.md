@@ -21,3 +21,5 @@ steps = [
 	"image.jpg"
 ]
 +++
+
+My first attempt at carving this fox designed by [Werewolf Whittler](https://www.youtube.com/watch?v=JKVv8WHQtEU). One of my favourite whittles!
