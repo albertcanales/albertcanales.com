@@ -17,7 +17,7 @@ Gràcies per passar-hi!
 
 ## Contacte
 
-- E-mail: [contact@albertcanales.com](mailto:contact@albertcanales.com) \[[PGP](https://keys.openpgp.org/vks/v1/by-fingerprint/CA5A575614CAE6B85DE41239C5D99B68858D1CFB)\]
+- E-mail: [contact@albertcanales.com](mailto:contact@albertcanales.com) \[[PGP](https://keys.openpgp.org/vks/v1/by-fingerprint/AA88BF5959D31873C8D83BD191927061BEE8CE8B)\]
 - Git: [albertcanales](https://github.com/albertcanales) a *GitHub*
 
 <figure>
